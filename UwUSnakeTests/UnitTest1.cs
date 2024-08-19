@@ -64,7 +64,9 @@ namespace UwUSnakeTests
             UwU.snakeX = 5;
             UwU.snakeY = 5;
 
-            UwU.foodX = 5;
+            UwU.velocityX = 1;
+
+            UwU.foodX = 6;
             UwU.foodY = 5;
 
             UwU.Logic();
