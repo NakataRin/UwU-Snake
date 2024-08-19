@@ -1,0 +1,30 @@
+# Folders and files related to Visual Studio and Visual Studio Code
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+# NuGet packages
+*.nupkg
+# Packages folder
+Packages/
+# Packages lock file
+packages.lock.json
+
+# Logs
+*.log
+
+# IDE configuration files
+.idea/
+*.sln.iml
+
+# Temporary files and folders
+*.tmp
+*.temp
+*.bak
