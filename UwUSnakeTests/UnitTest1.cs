@@ -70,7 +70,6 @@ namespace UwUSnakeTests
             UwU.foodY = 5;
 
             UwU.Logic();
-            UwU.Logic();
 
             Assert.AreEqual(1, UwU.score);
             Assert.AreEqual(initialLength + 1, UwU.snakeBody.Count);
