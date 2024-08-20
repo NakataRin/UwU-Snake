@@ -69,7 +69,11 @@ namespace UwUSnakeTests
             UwU.foodX = 6;
             UwU.foodY = 5;
 
+            //Console.WriteLine($"Before Logic - Snake(x,y): ({UwU.snakeX},{UwU.snakeY}), Food(x,y): ({UwU.foodX}, {UwU.foodY}), Score - {UwU.score}");
+
             UwU.Logic();
+
+            //Console.WriteLine($"After Logic - Snake(x,y): ({UwU.snakeX},{UwU.snakeY}), Food(x,y): ({UwU.foodX}, {UwU.foodY}), Score - {UwU.score}");
 
             Assert.AreEqual(1, UwU.score);
             Assert.AreEqual(initialLength + 1, UwU.snakeBody.Count);
