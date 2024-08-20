@@ -6,6 +6,22 @@ namespace UwUSnakeTests
     [TestClass]
     public class UwUTests
     {
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            UwU.velocityX = 0;
+            UwU.velocityY = 0;
+            UwU.score = 0;
+            UwU.snakeX = 0;
+            UwU.snakeY = 0;
+            UwU.foodX = 0;
+            UwU.foodY = 0;
+
+            UwU.gameOver = false;
+
+            UwU.snakeBody.Clear();
+        }
+        
         [TestMethod]
         public void StartGame_ShouldInitializeCorrectly()
         {
@@ -69,11 +85,7 @@ namespace UwUSnakeTests
             UwU.foodX = 6;
             UwU.foodY = 5;
 
-            Console.WriteLine($"Before Logic - Snake(x,y): ({UwU.snakeX},{UwU.snakeY}), Food(x,y): ({UwU.foodX}, {UwU.foodY}), Score - {UwU.score}");
-
             UwU.Logic();
-
-            Console.WriteLine($"After Logic - Snake(x,y): ({UwU.snakeX},{UwU.snakeY}), Food(x,y): ({UwU.foodX}, {UwU.foodY}), Score - {UwU.score}");
 
             Assert.AreEqual(1, UwU.score);
             Assert.AreEqual(initialLength + 1, UwU.snakeBody.Count);
